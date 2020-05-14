@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace命名空间：mapper代理开发时是接口的全限命名-->
+<mapper namespace="com.zc.dao.UmsAdminDao">
+    <!--查询所有-->
+    <select id="queryAll" parameterType="UmsAdmin" resultType="UmsAdmin">
+        SELECT * FROM ums_admin;
+    </select>
+</mapper>
